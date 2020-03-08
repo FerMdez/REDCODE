@@ -28,15 +28,15 @@ inevitable	MOV	space+5, gauntlet
 		MOV	space+15, gauntlet
 		JMP 	@inevitable
 		
-space 		DAT	-2, -2002
+space 		DAT	-2012, -2017
 
-reality   	DAT     -4003, -6003
+reality   	DAT     -2013, -gauntlet*3000
 
-power    	DAT     2005, 2004
+power    	DAT     2014, 2018
 
-soul   		DAT     2004, 2004
+soul   		DAT     2018, 2023
 
-mind  		JMP     2000
+mind  		JMP     2015
 
 time    	MOV   	snap, }space
 		MOV 	destiny, *space
@@ -52,5 +52,5 @@ snap		SPL	0, >-3
 		
 destiny  	DJN     -1, < 6000
 
-done		DAT     done*976016, 1
+done		DAT     done*14000605, 1
 		END
